@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CM-Стоматология</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="top-header">
+      <div class="logo">
+        <div class="logo-icon">∿</div>
+        <div class="logo-text">CM-Стоматология</div>
+      </div>
+
+      <div class="header-actions">
+        <button id="openLogin" class="mini-btn white-btn">Войти</button>
+        <button id="logoutBtn" class="mini-btn white-btn hide">Выйти</button>
+        <span id="userName" class="user-name"></span>
+
+        <a href="#appointment" class="header-btn appointment-top-btn">Записаться на приём</a>
+        <button id="callbackBtn" class="header-btn callback-top-btn">Обратный звонок</button>
+
+        <div class="header-phone"> +7 495 480 86 22</div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#about">О НАС</a>
+      <a href="#services">УСЛУГИ И ЦЕНЫ</a>
+      <a href="#doctors">НАШИ ВРАЧИ</a>
+      <a href="#reviews">ОТЗЫВЫ</a>
+      <a href="#contacts">КОНТАКТЫ</a>
+      <span class="search-icon"></span>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Лечение зубов во сне</h1>
+      <p>Консультация детского стоматолога — бесплатно!</p>
+      <a href="#services" class="hero-btn">Подробнее</a>
+    </div>
+
+    <div class="hero-right">
+      <div class="tooth-card">
+        <div class="tooth-big">🦷</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>О нас</h2>
+      <p class="section-text">
+        Наша стоматологическая клиника оказывает услуги по лечению, профилактике и
+        восстановлению зубов. Мы заботимся о пациентах, используем современное оборудование
+        и предлагаем удобную запись на приём через сайт.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="section gray-section">
+    <div class="container">
+      <h2>Услуги и цены</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Лечение зубов</h3>
+          <p>от 3000 ₽</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Профессиональная чистка</h3>
+          <p>от 2500 ₽</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Отбеливание</h3>
+          <p>от 7000 ₽</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Удаление зуба</h3>
+          <p>от 4000 ₽</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctors" class="section doctors-section">
+    <div class="container">
+      <h2>Наши врачи</h2>
+
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-avatar">
+            <div class="avatar-circle">👤</div>
+            <div class="avatar-text">Фото скоро<br>будет</div>
+          </div>
+
+          <h3 class="doctor-name blue-name">Юрченко Наталья Викторовна</h3>
+          <div class="doctor-line"></div>
+          <p class="doctor-desc">
+            Ортодонт, к.м.н. Заведующая стоматологическим отделением клиники.
+          </p>
+          <a href="#appointment" class="doctor-btn">Записаться на приём</a>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-avatar">
+            <div class="avatar-circle">👤</div>
+            <div class="avatar-text">Фото скоро<br>будет</div>
+          </div>
+
+          <h3 class="doctor-name blue-name">Божко Вера Игоревна</h3>
+          <div class="doctor-line"></div>
+          <p class="doctor-desc">
+            Стоматолог детский. Проводит профилактические осмотры и лечение детей.
+          </p>
+          <a href="#appointment" class="doctor-btn">Записаться на приём</a>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-avatar">
+            <div class="avatar-circle">👤</div>
+            <div class="avatar-text">Фото скоро<br>будет</div>
+          </div>
+
+          <h3 class="doctor-name pink-name">Кржижановская Юлия Александровна</h3>
+          <div class="doctor-line"></div>
+          <p class="doctor-desc">
+            Хирург, имплантолог, к.м.н. Главный врач стоматологических центров.
+          </p>
+          <a href="#appointment" class="doctor-btn">Записаться на приём</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="appointment" class="appointment-section">
+    <div class="container appointment-container">
+      <div class="consultation-card">
+        <div class="consultation-decor decor-left">+</div>
+        <div class="consultation-decor decor-right">🦷</div>
+
+        <h2>Бесплатная первичная консультация</h2>
+        <p class="consultation-subtitle">
+          Заполните форму, и мы свяжемся с вами в течение 15 минут
+        </p>
+
+        <form id="appointmentForm" class="appointment-form">
+          <input type="text" id="appName" placeholder="Ваше имя" autocomplete="name" />
+          <input type="tel" id="appPhone" placeholder="Номер телефона" autocomplete="tel" />
+          <button type="submit">Записаться</button>
+        </form>
+
+        <p id="appointmentMessage" class="form-message"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2>Отзывы</h2>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p>Очень удобный сайт и быстрая запись. Врачи вежливые, всё понравилось.</p>
+          <strong>Анна</strong>
+        </div>
+
+        <div class="review-card">
+          <p>Хорошая клиника, приятный персонал и современное оборудование.</p>
+          <strong>Максим</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section gray-section">
+    <div class="container small-container">
+      <h2>Контакты</h2>
+      <p><strong>Адрес:</strong> г. Москва, ул. Центральная, д. 10</p>
+      <p><strong>Телефон:</strong> +7 495 480 86 22</p>
+      <p><strong>Email:</strong> info@cm-dental.ru</p>
+      <p><strong>Время работы:</strong> Пн–Сб с 9:00 до 20:00</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 CM-Стоматология</p>
+  </footer>
+
+  <div id="authModal" class="modal hide">
+    <div class="modal-box">
+      <button id="closeModal" class="close-btn">×</button>
+
+      <div class="modal-switch">
+        <button id="showLogin" class="switch-btn">Вход</button>
+        <button id="showRegister" class="switch-btn">Регистрация</button>
+      </div>
+
+      <form id="loginForm" class="auth-form">
+        <h3>Вход</h3>
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Пароль" />
+        <button type="submit">Войти</button>
+        <p id="loginMessage" class="form-message"></p>
+      </form>
+
+      <form id="registerForm" class="auth-form hide">
+        <h3>Регистрация</h3>
+        <input type="text" id="regName" placeholder="Имя" />
+        <input type="email" id="regEmail" placeholder="Email" />
+        <input type="password" id="regPassword" placeholder="Пароль" />
+        <button type="submit">Зарегистрироваться</button>
+        <p id="registerMessage" class="form-message"></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
